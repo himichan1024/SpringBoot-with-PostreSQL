@@ -1,0 +1,13 @@
+### REST Client
+GET http://localhost:1337
+
+###
+POST http://localhost:1337
+Content-Type: application/json
+
+{
+    "name": "abc",
+    "location": "123"
+}
+
+###

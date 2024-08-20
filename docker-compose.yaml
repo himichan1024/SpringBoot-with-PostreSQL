@@ -1,0 +1,12 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgresql
+      POSTGRES_USER: admin
+      POSTGRES_DB: pg-db
+  app: 
+    image: my-node-app #docker build -t my-node-app .
+    ports: 
+      - 13000:3000 # expose port 3000
